@@ -185,4 +185,4 @@ while True:
         break
 
 speak('Proceed to viewing the document you have created')
-document.save('imran-cv.docx')
+document.save('cv.docx')
