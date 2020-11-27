@@ -57,7 +57,7 @@ p.add_run(experience+'\n')
 #More institutions
 while True:
     speak('Do you have any more educational background?')
-    has_more_education = input('Do you more educational backround? Yes or No')
+    has_more_education = input('Do you more educational backround? Yes or No'+'\n')
 
     if has_more_education.lower() == 'yes':
         P = document.add_paragraph()
@@ -74,13 +74,14 @@ while True:
         p.add_run(experience+'\n')
     else:
         break
+# Relevant course work
 
 # work experience
 document.add_heading('Work Experience')
 p = document.add_paragraph()
 
 speak('This is the work experience section')
-speak('Please read the prompts on the screen and answer appropiately')
+speak('Please read the prompts on the screen and answer appropriately')
 job_title = input('Job title?'+ '\n')
 company = input('Enter Company' + '\n' )
 from_date = input('From date'+ '\n')
@@ -137,8 +138,8 @@ p.add_run(language).bold = True
 # More projects
 while True:
     speak('Do you have more projects')
-    has_more_projects = input('Do you have more projects? Yes or No')
-
+    has_more_projects = input('Do you have more projects? Yes or No ')
+    speak('follow the prompts below')
     if has_more_projects.lower() == 'yes':
         p = document.add_paragraph()
 
@@ -162,7 +163,7 @@ speak('This is the leadership and awards section')
 speak('fill in appropriately')
 award_title = input ('Name of award or leadership position'+ '\n')
 institution = input('Providing institution'+'\n')
-description = input('describe the purpose of the award')
+description = input('describe the purpose of the award'+'\n')
 
 p.add_run(award_title + ' - ' + institution +'\n').bold = True
 p.add_run(description)
